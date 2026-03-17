@@ -1,4 +1,3 @@
--- lua/cobaltnext/highlights.lua
 local c = require("cobaltnext.palette")
 
 local M = {}
@@ -9,19 +8,21 @@ end
 
 function M.setup()
 	-- Base
-	hi("Normal", { fg = c.foreground, bg = c.background })
-	hi("NormalFloat", { fg = c.foreground, bg = c.background })
-	hi("FloatBorder", { fg = c.darkgray, bg = c.background })
+	hi("Normal", { fg = c.foreground })
+	hi("NormalFloat", { fg = c.foreground })
+	hi("FloatBorder", { fg = c.darkgray })
 	hi("Cursor", { fg = c.cursor_txt, bg = c.cursor })
 	hi("Visual", { fg = c.selection_txt, bg = c.darkgray })
 	hi("LineNr", { fg = c.darkgray })
 	hi("CursorLineNr", { fg = c.lightyellow, bold = true })
 	hi("VertSplit", { fg = c.darkgray })
+
 	hi("StatusLine", { fg = c.foreground, bg = c.black })
 	hi("StatusLineNC", { fg = c.darkgray, bg = c.black })
+
 	hi("Pmenu", { fg = c.foreground, bg = c.background })
 	hi("PmenuSel", { fg = c.foreground, bg = c.darkgray })
-	hi("EndOfBuffer", { fg = c.background })
+	hi("EndOfBuffer", { fg = "NONE" })
 
 	-- Syntax
 	hi("Comment", { fg = c.darkgray, italic = true })
@@ -69,19 +70,19 @@ function M.setup()
 	hi("LspCodeLens", { fg = c.darkgray, italic = true })
 
 	-- Telescope
-	hi("TelescopeNormal", { bg = c.background })
-	hi("TelescopeBorder", { fg = c.darkgray, bg = c.background })
-	hi("TelescopePromptNormal", { bg = c.black })
+	hi("TelescopeNormal", {})
+	hi("TelescopeBorder", { fg = c.darkgray })
+	hi("TelescopePromptNormal", { bg = c.black }) -- Prompt looks good slightly darkened
 	hi("TelescopePromptBorder", { fg = c.darkgray, bg = c.black })
 	hi("TelescopeSelection", { fg = c.white, bg = c.teal })
 
 	-- Explorer (Snacks/Neo-tree/NvimTree)
-	hi("NvimTreeNormal", { bg = c.background })
-	hi("NvimTreeNormalNC", { bg = c.background })
-	hi("NvimTreeEndOfBuffer", { fg = c.background })
-	hi("NeoTreeNormal", { bg = c.background })
-	hi("NeoTreeNormalNC", { bg = c.background })
-	hi("NeoTreeEndOfBuffer", { fg = c.background })
+	hi("NvimTreeNormal", {})
+	hi("NvimTreeNormalNC", {})
+	hi("NvimTreeEndOfBuffer", { fg = "NONE" })
+	hi("NeoTreeNormal", {})
+	hi("NeoTreeNormalNC", {})
+	hi("NeoTreeEndOfBuffer", { fg = "NONE" })
 
 	-- WhichKey
 	hi("WhichKey", { fg = c.yellow })
@@ -94,7 +95,7 @@ function M.setup()
 	hi("GitSignsDelete", { fg = c.red })
 
 	-- Lazy.nvim
-	hi("LazyNormal", { bg = c.background, fg = c.foreground })
+	hi("LazyNormal", { fg = c.foreground })
 	hi("LazyH1", { fg = c.yellow, bold = true })
 end
 
