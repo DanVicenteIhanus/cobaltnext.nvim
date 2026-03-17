@@ -8,9 +8,9 @@ end
 
 function M.setup()
 	-- Base
-	hi("Normal", { fg = c.foreground })
-	hi("NormalFloat", { fg = c.foreground })
-	hi("FloatBorder", { fg = c.darkgray })
+	hi("Normal", { fg = c.foreground, bg = "NONE" })
+	hi("NormalFloat", { fg = c.foreground, bg = "NONE" })
+	hi("FloatBorder", { fg = c.darkgray, bg = "NONE" })
 	hi("Cursor", { fg = c.cursor_txt, bg = c.cursor })
 	hi("Visual", { fg = c.selection_txt, bg = c.darkgray })
 	hi("LineNr", { fg = c.darkgray })
@@ -70,7 +70,7 @@ function M.setup()
 	hi("LspCodeLens", { fg = c.darkgray, italic = true })
 
 	-- Telescope
-	hi("TelescopeNormal", {})
+	hi("TelescopeNormal", { bg = "NONE" })
 	hi("TelescopeBorder", { fg = c.darkgray })
 	hi("TelescopePromptNormal", { bg = c.black }) -- Prompt looks good slightly darkened
 	hi("TelescopePromptBorder", { fg = c.darkgray, bg = c.black })
@@ -80,7 +80,7 @@ function M.setup()
 	hi("NvimTreeNormal", {})
 	hi("NvimTreeNormalNC", {})
 	hi("NvimTreeEndOfBuffer", { fg = "NONE" })
-	hi("NeoTreeNormal", {})
+	hi("NeoTreeNormal", { bg = "NONE" })
 	hi("NeoTreeNormalNC", {})
 	hi("NeoTreeEndOfBuffer", { fg = "NONE" })
 
