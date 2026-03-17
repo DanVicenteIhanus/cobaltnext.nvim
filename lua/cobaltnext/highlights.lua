@@ -77,11 +77,11 @@ function M.setup()
 	hi("TelescopeSelection", { fg = c.white, bg = c.teal })
 
 	-- Explorer (Snacks/Neo-tree/NvimTree)
-	hi("NvimTreeNormal", {})
-	hi("NvimTreeNormalNC", {})
+	hi("NvimTreeNormal", { bg = "NONE" })
+	hi("NvimTreeNormalNC", { bg = "NONE" })
 	hi("NvimTreeEndOfBuffer", { fg = "NONE" })
 	hi("NeoTreeNormal", { bg = "NONE" })
-	hi("NeoTreeNormalNC", {})
+	hi("NeoTreeNormalNC", { bg = "NONE" })
 	hi("NeoTreeEndOfBuffer", { fg = "NONE" })
 
 	-- WhichKey
