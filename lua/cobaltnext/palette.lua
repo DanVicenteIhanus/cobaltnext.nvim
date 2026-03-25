@@ -1,8 +1,6 @@
 -- lua/cobaltnext/palette.lua
 local palette = {
 	black = "#282f36",
-	red = "#e6576a",
-	green = "#99c794",
 	yellow = "#fac863",
 	blue = "#5a9bcf",
 	pink = "#c5a5c5",
@@ -18,7 +16,7 @@ local palette = {
 	white = "#ffffff",
 
 	background = "#0f1c23",
-	status_bg = "#080f13",
+	status_bg = "#ff0000",
 	foreground = "#d8dee9",
 	cursor = "#fac863",
 	cursor_txt = "#ffffff",
