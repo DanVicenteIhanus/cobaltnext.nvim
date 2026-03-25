@@ -18,6 +18,7 @@ local palette = {
 	white = "#ffffff",
 
 	background = "#0f1c23",
+	status_bg = "#080f13",
 	foreground = "#d8dee9",
 	cursor = "#fac863",
 	cursor_txt = "#ffffff",
